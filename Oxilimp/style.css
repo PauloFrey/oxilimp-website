@@ -1,0 +1,400 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    background: url(imagens/background.jpg) no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    object-fit: cover;
+    scroll-behavior: smooth;
+}
+main{
+    position: absolute;
+    height: 2500px;
+}
+/*Seção do menu de naveção
+----------------------------------------------*/
+.menu{
+    position: absolute;
+    height: 625px;
+    width: 400px;
+    left: -330px;
+    z-index: 1;
+
+    background-color: rgb(100, 61, 138);
+    transition: 1s;
+}
+#barra{/*Barra que controla menu retrátil*/
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70px;
+    height: 625px;
+    z-index: 1;
+
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    transition: 1s;
+    text-align: center;
+    line-height: 625px;
+
+}#barra:hover{
+    background-color: rgba(0, 0, 0, 0.10);
+}
+
+.indice{/*Lista não ordena com os indices de navegação*/
+    color: white;
+
+    position: relative;
+    top: 45%;
+    text-align: center;
+    transform: translateY(-50%);
+}
+
+.indice li{
+    list-style: none;
+    margin: 15px 0 15px 0;
+}
+
+.indice li a{/*botões de navegação*/
+    text-decoration: none;
+    color: rgb(196, 196, 196);
+    font-size: 1.6rem;
+}.indice li a:hover{
+    font-weight: bold;
+    color: white;
+}
+
+.redes{/*Lista não ordenada com as redes sociais*/
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    width: fit-content;
+    transform: translateX(-50%);
+}
+
+.redes li{
+    display: inline-block;
+    margin: 0 13px 0 13px;
+}
+
+.redes li a{/*Botões das redes sociais*/
+    font-size: 1.6rem;
+    color: rgb(196, 196, 196);
+}.redes li a:hover{
+    font-size: 1.8rem;
+    color: white;
+}
+
+/*Logo no header
+---------------------------------------------*/
+.logo-header{
+    color: white;
+
+    position: absolute;
+    right: 25px;
+    top: 25px;
+}
+
+/*Seção de introdução a empresa
+---------------------------------------------*/
+.introducao{
+    height: 625px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.40);
+    position: relative;
+    top: -12px;
+}
+
+.introducao-conteudo{/*Estilo do conteudo da seção*/
+    position: relative;
+    left: 55%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    width: 45%;
+
+    text-align: left;
+    color: white;
+    text-shadow: 2px 2px 6px black;
+}
+
+.introducao-conteudo h1{
+    margin: 12px 0 12px 0;
+    font-size: 4rem;
+}
+
+.introducao-conteudo p{
+    font-size: 1.4rem;
+    color:rgb(255, 255, 255);
+}
+
+.botao{
+    border: 2px solid white;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 1.1rem;
+    backdrop-filter: blur(5px);
+    border-radius: 40px;
+    color: white;
+    transition: 1.2s;
+
+    width: 150px;
+    height: 50px;
+    margin-top: 20px;
+}.botao:hover{width: 45%;}
+
+/*Conteudo sobre nós da página*/
+.sobre{
+    height: 625px;
+    background-color: rgb(78, 44, 112);
+    position: relative;
+    top: -12px;
+}
+
+#sobre-titulo{
+    color: white;
+    font-size: 1.8rem;
+
+    position: relative;
+    left: 50%;
+    top: 55px;
+    transform: translateX(-50%);
+    width: 80%;
+    text-align: center;
+}
+
+.caixa{/*Caixas com detalhes sobre nós*/
+    position: relative;
+    text-align: center;
+    display: inline-flex;
+    top: 50%;
+    left: 7%;
+    transform: translateY(-50%);
+    width: 25%;
+    height: 370px;
+    margin: 0 20px 0 20px;
+    padding: 10px;
+
+    color: white;
+    border-radius: 10px;
+    transition: 0.8s;
+}.caixa:hover{box-shadow: 1px 1px 4px black;}
+
+#btn-comprar{
+    width: 150px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 45px;
+
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(231, 85, 85);
+    color: white;
+    font-size: 1.1rem;
+    transition: 1s;
+}#btn-comprar:hover{
+    background-color: white;
+    color: black;
+}
+
+.caixa ul li{
+    margin: 12px 0 12px 0;
+    list-style: none;
+}
+
+.caixa ul li i{
+    font-size: 4.5rem;
+    color: rgb(187, 187, 187);
+}
+
+.caixa ul li p{color: rgb(209, 209, 209);}
+    /*Sobre parte dois
+    -------------------------------------------*/
+    .sobre-dois{
+        height: 625px;
+        background-color: rgb(113, 71, 155);
+        color: white;
+        position: relative;
+        top: -24px;
+    }
+
+    .sobre-dois img{
+        height: 100%;
+        width: 40%;
+        position: absolute;
+        object-fit: cover;
+    }
+
+    .sobre-dois ul{
+        position: relative;
+        left: 50%;
+        top: 65px;
+        list-style: none;
+        width: 40%;
+    }
+
+    .sobre-dois ul li{margin: 12px 0 12px 0;}
+
+    .sobre-dois ul li h3{
+        font-weight: 500;
+        color: rgb(219, 219, 219);
+    }
+
+    .sobre-dois ul li h1{font-size: 1.8rem;}
+
+    .sobre-dois ul li p{color: rgb(219, 219, 219);}
+
+    .sobre-dois ul li button{
+        width: 150px;
+        bottom: 20px;
+        height: 45px;
+
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        background-color: transparent;
+        backdrop-filter: blur(40px);
+        border: 2px solid white;
+        color: white;
+        font-size: 1.1rem;
+        transition: 1s;
+    }.sobre-dois ul li button:hover{
+        background-color: white;
+        border: 2px solid white;
+        color: black;
+    }
+
+/*Seção de contato
+---------------------------------------------------*/
+.contato{
+    height: 555px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.40);
+    position: relative;
+    top: -24px;
+}
+
+.contato form{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 85%;
+    height: 85%;
+
+    border: 2px solid white;
+    text-align: center;
+    transition: 1s;
+}.contato form:hover{
+    backdrop-filter: blur(7px);
+}
+
+.contato form h1{
+    font-size: 1.9rem;
+    color: white;
+}
+.contato form h3{
+    color: rgb(223, 223, 223);
+    font-weight: 500;
+    margin: 20px 0 20px 0;
+}
+
+.contato form input{
+    border: none;
+    border-bottom: 2px solid white;
+    color:white;
+    background-color: transparent;
+    width: 320px;
+    height: 40px;
+    font-size: 1.1rem;
+}.contato form input::placeholder{color: white;}
+
+.contato form ul{list-style: none;}
+
+.contato form ul li{
+    display: inline-block;
+    margin: 0 10px 0 10px;
+}
+
+#btn-enviar{
+    width: 150px;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(231, 85, 85);
+    color: white;
+    font-size: 1.1rem;
+    transition: 1s;
+}#btn-enviar:hover{
+    background-color: white;
+    color: black;
+}
+/*Rodapé da pagina
+----------------------------------*/
+.rodape{
+    height: 70px;
+    width: 100%;
+    background-color: rgb(78, 44, 112);
+    text-align: center;
+    line-height: 70px;
+    position: relative;
+    top: -24px;
+}
+
+/*Responsivo
+-------------------------------------------------------*/
+@media (max-width: 540px){/*mobile*/
+    /*Introducao*/
+    .introducao-conteudo{
+        width: 55%;
+    }
+    .introducao-conteudo h1{font-size: 3rem;}
+    .introducao-conteudo p{font-size: 1.3rem;}
+    .botao:hover{width: 150px;}
+
+    /*Sobre parte um*/
+    .sobre{height: 1500px;}
+    #sobre-titulo{font-size: 1.7rem;}
+    .caixa{
+        display: block;
+        width: 80%;
+        top: 280px;
+        margin: 20px 20px 20px 20px;
+    }.caixa:hover{box-shadow: none;}
+
+    /*sobre parte dois*/
+    .sobre-dois{height: 900px;}
+    .sobre-dois img{
+        width: 100%;
+        height: 200px;
+        bottom: 0;
+    }
+    .sobre-dois ul{
+        left:35px;
+        width: 85%;
+    }
+
+    /*Contato*/
+    .contato{        height: 810px;    }
+    .contato form{height: 70%; backdrop-filter: blur(10px);}
+    .contato form ul li{
+        display:block;
+        margin: 0 0 15px 0;
+    }
+    .contato form:hover{backdrop-filter: none}
+
+    /*Rodape*/
+    .rodape{font-size: 0.8rem;}
+}
